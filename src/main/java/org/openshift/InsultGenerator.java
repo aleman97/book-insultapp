@@ -4,7 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
 
+@ApplicationPath("/api")
+public class JaxrsConfig extends Application{
+}
 public class InsultGenerator {
 	public String generateInsult() {
 		String vowels = "AEIOU";
